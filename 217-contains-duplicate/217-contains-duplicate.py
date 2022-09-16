@@ -1,9 +1,8 @@
-import numpy as np
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        if len(nums) > len(set(nums)):
-            return True
-        else:
-            return False
+class Solution(object):
+    def containsDuplicate(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        return(len(list(set(nums))) < len(nums))
         
-                
